@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web-Shop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
    
@@ -18,15 +19,101 @@
                 
                 <nav class="header__navbar">
                     <ul class="header__navbar--list">
-                        <li class="header__navbar-item header__navbar-item--separate">Vào cửa hàng trên ứng dụng H-Shop</li>
-                        <li class="header__navbar-item">Kết nối</li>
+                        <li class="header__navbar-item header__navbar-item--separate">
+                            Vào cửa hàng trên ứng dụng H-Shop
+                            <div class="header__qr">
+                                <img src="./assets/img/QRCode.png" alt="QR Code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__navbar-link">
+                                        <img src="./assets/img/app_store.png" alt="App Store" class="header__qr-download-img">
+                                    </a>
+                                    <a href="" class="header__navbar-link">
+
+                                        <img src="./assets/img/gg_play.png" alt="GooGle Play" class="header__qr-download-img">
+                                    </a>
+                                    
+    
+                                </div>
+                            </div>
+                        </li>
+                        
+                        
+                        <li class="header__navbar-item ">
+                            <span class="no__hover">Kết nối</span>
+                            <a href="#" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="#" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
                     </ul>
                     <ul class="header__navbar--list">
-                        <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link">Thông báo</a>
+                        <li class="header__navbar-item ">
+                            <a href="#" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-solid fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notification">
+                                <header class="header__notifi-header ">
+                                    <h3>Thông Báo Mới Nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                             <img src="./assets/img/pic4.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                 <span class="header__notify-name">
+                                                    Chuột Mad Catz MCZ R.A.T.1
+                                                 </span>
+                                                 <span class="header__notify-description">
+                                                    Chuột chơi game, thiết kế đồ họa, xử lý ảnh, vẽ 2D,3D
+                                                 </span>
+                                            </div>
+
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                             <img src="./assets/img/pic1.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                 <span class="header__notify-name">
+                                                    CHUỘT GAMING V6 LED USB
+                                                 </span>
+                                                 <span class="header__notify-description">
+                                                    Mouse Game cao cấp cực nhạy, LED 7 màu, dây dù siêu bền. chơi game, thiết kế đồ họa, xử lý ảnh, vẽ 2D,3D
+                                                    
+                                                 </span>
+                                            </div>
+
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                             <img src="./assets/img/pic2.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                 <span class="header__notify-name">
+                                                    Chuột Game Logitech G102 Gen2 Lightsync
+                                                 </span>
+                                                 <span class="header__notify-description">
+                                                    Sản phẩm được tích hợp công nghệ LIGHTSYNC đầy cảm hứng, thắp sáng không gian gaming của bạn. Chuột chơi game, thiết kế đồ họa, xử lý ảnh, vẽ 2D,3D
+                                                 </span>
+                                            </div>
+
+                                        </a>
+                                    </li>
+
+                                </ul>
+                                <footer class="header__notifi-footer">
+                                    <a href="#" class="header__notifi-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+
                         </li>
                         <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link">Trợ giúp</a>
+                            <a href="#" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-solid fa-circle-question"></i>
+                                Trợ giúp</a>
                         </li>
                         <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
                         <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>

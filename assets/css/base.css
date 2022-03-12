@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Neonderthaw&family=Roboto:wght@300;700&family=Satisfy&display=swap');
 :root{
+    --primary-color: #ed4e2e;
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
@@ -26,5 +27,17 @@ html{
     display: flex;
     flex-wrap: wrap;
 }
+.no__hover{
+    color: #fff !important;
+    cursor: default ;
+}
+/* Animation */
 
-
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
