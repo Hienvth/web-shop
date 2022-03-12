@@ -117,7 +117,7 @@
 /* ==== Header__notification ==== */
 .header__notification{
     position: absolute;
-    top: 100%;
+    top: 124%;
     right: 0;
     width: 404px;
     border: 1px solid #d3d3d3;
@@ -127,7 +127,28 @@
     transform-origin: top right;
     animation: headerNotification 0.3s ease-in-out;
 }
+.header__notification::before{
+    content: "";
+    position: absolute;
+    background-color: var(--white-color);
+    /* z-index: 1; */
+    top: -2%;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+    transform: rotate(45deg);
 
+}
+.header__notification::after{
+    content: "";
+    position: absolute;
+    /* background-color: var(--white-color); */
+    z-index: 1;
+    top: -6%;
+    right: 0;
+    height: 18px;
+    width: 100%;
+}
 .header__navbar-item:hover > .header__notification{
     display: block;
 }
