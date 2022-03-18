@@ -5,6 +5,12 @@
     --black-color: #000;
     --text-color: #333;
     --border-color: #dbdbdb;
+
+    --header-height: 120px;
+    --navbar-height: 34px;
+    --header-with-search-height : calc(var(--header-height) - var(--navbar-height));
+
+    
 }
 * {
     box-sizing: inherit;
@@ -31,6 +37,7 @@ html{
 .no__hover{
     color: #fff !important;
     cursor: default ;
+    padding: 8px;
 }
 /* Animation */
 
@@ -42,6 +49,14 @@ html{
         opacity: 1;
     }
 }
+@keyframes growth{
+    from {
+        transform: scale(var(--growth-from));
+    }
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
 .modal {
     position: fixed;
     inset: 0;
@@ -50,6 +65,8 @@ html{
     /* justify-content: center;
     align-items: center; */ 
     /* == margin : auto; */
+    animation: fadeIn linear 0.1s;
+    display: none;
 }
 .modal__overplay{
     position: absolute;
@@ -61,9 +78,12 @@ html{
 .modal__body{
     /* width: 300px;
     height: 300px; */
+    --growth-from: .7s;
+    --growth-to: 1;
     margin: auto;
     position: relative;
     z-index: 99999;
+    animation: growth linear 0.2s;
 }
 /* == Button style== */
 .btn{
