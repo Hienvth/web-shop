@@ -39,6 +39,8 @@ html{
     cursor: default ;
     padding: 8px;
 }
+
+
 /* Animation */
 
 @keyframes fadeIn {
@@ -87,7 +89,7 @@ html{
 }
 /* == Button style== */
 .btn{
-    min-width: 142px;
+    min-width: 124px;
     height: 34px ;
     color: var(--text-color);
     text-decoration: none;

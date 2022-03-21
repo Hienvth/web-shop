@@ -112,8 +112,20 @@
                                 <i class="header__navbar-icon fa-solid fa-circle-question"></i>
                                 Trợ giúp</a>
                         </li>
-                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
-                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+
+                        <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
+                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li> -->
+
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="./assets/img/Screenshot (71).png" alt="" class="header__navbar-user-avt">
+                            <span class="header__navbar-user-name">Hiển Võ</span>
+                            <ul class="header__navbar-user-menu">
+                                <li class="navbar-user-option"><a href="#">Tài khoản của tôi</a></li>
+                                <li class="navbar-user-option"><a href="#">Địa chỉ của tôi</a></li>
+                                <li class="navbar-user-option"><a href="#">Đơn mua</a></li>
+                                <li class="navbar-user-option green-text"><a href="#">Đăng xuất</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
 
@@ -176,11 +188,99 @@
                         <div class="header__cart-wrap">
                             <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
 
-                            <div class="header__cart-list header__cart-list--no-cart">
+                            <span class="header__cart-notice">
+                                3
+                            </span>
+                           
+                            <div class="header__cart-list  ">
+                                
+                                 <!-- has cart: header__cart-list--no-cart -->
                                 <img class="header__cart-no-cart-img" src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/cart/9bdd8040b334d31946f49e36beaf32db.png" alt="">
-                                <p class="header__cart-no-cart-title">
+                                <p class="header__cart-no-cart-msg">
                                     Chưa có sản phẩm
                                 </p>
+                                 <!-- has cart: header__cart-list--no-cart -->
+
+                                 <h4 class="header__cart-heading">
+                                     Sản phẩm đã thêm
+                                 </h4>
+                                 <ul class="header__cart-list-item">
+                                     <!--cart item  -->
+                                    <li class="header__cart-item">
+                                         <img src="https://cf.shopee.vn/file/0ce38f6b117cb0d67b13e6747ad467d8" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="lable-title-name header__cart-item-name">
+                                                    Chuột gaming 
+                                                    <!-- chuột chơi game logitech G102 Led RGB 8000DPI tặng kèm lót chuột -->
+                                                </h5>
+                                                
+                                                <div class="header__cart-item-price--wrap">
+                                                    <span class="header__cart-item-price">179.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Loại hàng: Đồ điện tử
+                                                </span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://cf.shopee.vn/file/e7d7d0992b44a526a41a0addbffb89f2" alt="" class="header__cart-img">
+                                       <div class="header__cart-item-info">
+                                           <div class="header__cart-item-head">
+                                               <h5 class="lable-title-name header__cart-item-name">
+                                                Chuột Gaming Chống Ồn Led Rgb T-WOLF Q15
+                                               </h5>
+                                               
+                                               <div class="header__cart-item-price--wrap">
+                                                   <span class="header__cart-item-price">299.000đ</span>
+                                                   <span class="header__cart-item-multiply">x</span>
+                                                   <span class="header__cart-item-qnt">10</span>
+                                               </div>
+
+                                           </div>
+                                           <div class="header__cart-item-body">
+                                               <span class="header__cart-item-description">
+                                                   Loại hàng: Đồ điện tử
+                                               </span>
+                                               <span class="header__cart-item-remove">Xóa</span>
+                                           </div>
+
+                                       </div>
+                                   </li>
+                                   <li class="header__cart-item">
+                                    <img src="https://cf.shopee.vn/file/97eb84a5acd3f0de4c5bb408629e8728" alt="" class="header__cart-img">
+                                   <div class="header__cart-item-info">
+                                       <div class="header__cart-item-head">
+                                           <span class="lable-title-name header__cart-item-name">
+                                            J800 mechanical Gaming mouse
+                                           </span>
+                                           
+                                           <div class="header__cart-item-price--wrap">
+                                               <span class="header__cart-item-price">399.000đ</span>
+                                               <span class="header__cart-item-multiply">x</span>
+                                               <span class="header__cart-item-qnt">9</span>
+                                           </div>
+
+                                       </div>
+                                       <div class="header__cart-item-body">
+                                           <span class="header__cart-item-description">
+                                               Loại hàng: Đồ điện tử
+                                           </span>
+                                           <span class="header__cart-item-remove">Xóa</span>
+                                       </div>
+
+                                    </div>
+                                </li>
+                            </ul>
+                                 <a href="#" class="btn btn--primary header__cart-view-cart">Xem giỏ hàng</a>
                             </div>
                             
                         </div>
@@ -335,5 +435,6 @@
         
         </div>
     </div>
+
 </body>
 </html>
