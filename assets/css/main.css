@@ -34,19 +34,31 @@
     border-radius: 50%;
     /* border: 2px solid rgba(153, 153, 153, 0.308); */
     box-shadow: 0px 0px 1px 1px  rgba(0, 0, 0, 0.329);
+    z-index: 1;
 }
 .header__navbar-user-name{
-    margin-left: 8px;
+    margin-left: 4px;
     font-size: 1.4rem;
     font-weight: 400;
+}
+.header__navbar-user-name::after{
+    content: "";
+    position: absolute;
+    width: 108%;
+    height: 24px;
+    /* background-color: var(--white-color); */
+    border: 1px solid var(--white-color);
+    top: 11%;
+    right: -6px;
+    border-radius: 30px;
 }
 /* ==========navbar-user=========== */
 .header__navbar-user-menu{
     list-style: none;
     position: absolute;
     padding-left: 0;
-    top: calc(100% + 2px);
-    right: 0;
+    top: calc(100% + 3px);
+    right: 14%;
     width: 130px;
     border-radius: 2px;
     background-color: var(--white-color);
@@ -61,8 +73,8 @@
     content: "";
     position: absolute;
     right: 12px;
-    top: -20px;
-    border-width: 10px;
+    top: -12px;
+    border-width: 6px;
     border-style: solid;
     border-color: transparent transparent var(--white-color) transparent;
     cursor: pointer; 
@@ -90,6 +102,7 @@
     border-top-right-radius: 2px;   
 }
 .navbar-user-option:last-child{
+    border-top: 1px solid #eae9e9;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;   
 }
@@ -106,6 +119,7 @@
     /* left: 5px; */
 }
 .green-text a{
+    
     color: #139253 !important;
     font-weight: 600;
 }
@@ -114,7 +128,7 @@
 .header__navbar-item,
 .header__navbar-item-link{
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: var(--white-color);
     text-decoration: none;
     font-weight: 300;
@@ -155,6 +169,9 @@
     color: var(--white-color);
     text-decoration: none;
    
+}
+.header__navbar-icon-link:nth-child(2){
+    margin-left: -5px;
 }
 .header__navbar-icon{
     font-size: 1.8rem;
@@ -216,7 +233,7 @@
 /* ==== Header__notification ==== */
 .header__notification{
     position: absolute;
-    top: 124%;
+    top: calc(100% + 3px);
     right: 0;
     width: 404px;
     border: 1px solid #d3d3d3;
@@ -224,7 +241,7 @@
     cursor: default;
     display: none;
     border-radius: 3px;
-    transform-origin: calc(100% - 20px) top ;
+    transform-origin: calc(100% - 32px) top ;
     z-index: 1;
     will-change: opacity, transform;  /* web tối ưu chuyển động theo 2 thuộc tính này*/
     
@@ -241,23 +258,23 @@
     }
 }
 .header__notification::before{
+   
+
     content: "";
     position: absolute;
-    background-color: var(--white-color);
-    
-    top: -2%;
-    right: 10px;
-    height: 30px;
-    width: 30px;
-    transform: rotate(45deg);
-
-
+    right: 12px;
+    top: -22px;
+    border-width: 11px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    cursor: pointer; 
+   z-index: 1;
 }
 .header__notification::after{
     content: "";
     position: absolute;
     /* background-color: var(--white-color); */
-    z-index: 1;
+    /* z-index: 1; */
     top: -6%;
     right: 0;
     height: 18px;
@@ -269,6 +286,7 @@
 .header__notifi-header{
     height: 40px;
     background-color: var(--white-color);
+    
 }
 .header__notifi-header h3 {
     color: #999;
@@ -279,6 +297,7 @@
     line-height: 40px;
     cursor: text;
     user-select: none; 
+    /* z-index: 1; */
 
 }
 .header__notify-list {
@@ -517,6 +536,11 @@
     width: 200px;
     /* cursor: pointer; */
 }
+.header__logo-link{
+    text-decoration: none;
+    color: transparent;
+    outline: none;
+}
 
 .header__logo-img{
     width: 150px;
@@ -663,7 +687,7 @@
 .header__search-option{
     position: absolute;
     right: 0;
-    top: 130%;
+    top: calc(100% + 3.5px);
     list-style: none;
     width: 126px;
     padding-left: 0px;
@@ -787,7 +811,7 @@
 }
 .header__cart-list{
     position: absolute;
-    top: calc(100% + 14px);
+    top: calc(100% + -1px);
     right: 8px;
     background-color: var(--white-color);
     width: 400px;
@@ -812,7 +836,7 @@
     right: 10px;
     top: -12px; */
     right: 4px;
-    top: -38px;
+    top: -29px;
      border-width: 20px; 
      border-style: solid;
      border-color: transparent transparent var(--white-color) transparent; 
